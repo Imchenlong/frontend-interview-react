@@ -1,0 +1,35 @@
+.layout_header {
+  height: 60px;
+  background-color: #fff;
+  position: relative;
+  &::before {
+    content: "";
+    pointer-events: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dcdcdc;
+    height: 200%;
+    width: 200%;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .content {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .header_navs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .header_nav {
+      font-weight: 700;
+      color: #246394;
+      text-decoration: none;
+      font-size: 16px;
+      margin-right: 40px;
+    }
+  }
+}
