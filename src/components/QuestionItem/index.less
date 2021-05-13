@@ -1,0 +1,24 @@
+.question_item{
+  display: block;
+  margin-top: 27px;
+  padding-bottom: 27px;
+  &::before{
+    content: "";
+    pointer-events: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e6e6e6;
+    height: 200%;
+    width: 200%;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  h2{
+    font-size: 17px;
+    line-height: 1.78em;
+    margin-bottom: 8px;
+  }
+}
