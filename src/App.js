@@ -10,7 +10,7 @@ function App() {
       <Header></Header>
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-      <div className="content">
+      <div className="mian_content">
         <Switch>
           <Route exact path="/">
             <Home />
