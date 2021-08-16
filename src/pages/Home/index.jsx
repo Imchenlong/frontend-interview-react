@@ -50,6 +50,7 @@ class Home extends Component {
       ],
     }
   }
+  
   render() {
     const questionItems = this.state.questions.map(
       (item) => <QuestionItem item={item} key={item.id}></QuestionItem>
